@@ -1,0 +1,14 @@
+{
+  "include": ["src"], // 컴파일할 파일들의 범위와 위치 지정
+  "compilerOptions": { 
+      "target": "ESNext", // JS 파일 버전 지정
+      "module": "ESNext", // 모듈 시스템 지정
+      "outDir": "dist", // 컴파일된 파일의 위치 지정
+      "strict": true, // 엄격한 타입 검사 옵션 활성화
+      "moduleDetection": "force", // 모듈 감지 강제화
+      "allowJs": true, // JS 파일도 컴파일 허용
+  },
+  "ts-node": {
+    "esm": true, // ESM 모듈 사용
+  }
+}
