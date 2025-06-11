@@ -133,3 +133,10 @@ updateUserInfo(
     }
 )
 
+// 템플릿 리터럴 타입
+type Color = "Red" | "Green" | "Blue";
+
+type Animal = "Cat" | "Dog" | "Bird";
+
+type ColorAnimal = `${Color}-${Animal}`; 
+// "Red-Cat" | "Red-Dog" | "Red-Bird" | "Green-Cat" | "Green-Dog" | "Green-Bird" | "Blue-Cat" | "Blue-Dog" | "Blue-Bird"
